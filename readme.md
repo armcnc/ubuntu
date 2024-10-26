@@ -43,7 +43,7 @@ cd linuxcnc
 
 ```shell
 ./debian/configure no-docs uspace
-dpkg-buildpackage -b -uc -j6
+dpkg-buildpackage -b -uc -j8
 ```
 
 ## Install
