@@ -29,7 +29,7 @@ sudo apt update && sudo apt upgrade
 2、Install the necessary dependencies for compilation in ubuntu.
 
 ```shell
-sudo apt install -y dpkg-dev build-essential libudev-dev libmodbus-dev libgtk-3-dev libgtk2.0-dev yapps2 intltool bwidget tclx libeditreadline-dev libxmu-dev libxmu-headers asciidoc
+sudo apt install -y dpkg-dev build-essential libudev-dev libmodbus-dev libgtk-3-dev libgtk2.0-dev yapps2 intltool bwidget tclx libeditreadline-dev libxmu-dev libxmu-headers asciidoc dh-python imagemagick netcat-openbsd po4a python3-xlib xvfb
 ```
 
 3、Download linuxcnc 2.9.3 source code to ubuntu system.
@@ -37,6 +37,10 @@ sudo apt install -y dpkg-dev build-essential libudev-dev libmodbus-dev libgtk-3-
 ```shell
 git clone -b v2.9.3 --depth 1 git@github.com:LinuxCNC/linuxcnc.git
 cd linuxcnc
+# or
+wget https://github.com/LinuxCNC/linuxcnc/archive/refs/tags/v2.9.3.tar.gz
+tar -xzf v2.9.3.tar.gz
+cd linuxcnc-2.9.3
 ```
 
 4、Compile and build DEB installation files.
@@ -53,6 +57,8 @@ Compile the generated deb file in the higher-level directory and install it dire
 ```shell
 sudo dpkg -i ../linuxcnc*.deb
 ```
+
+> If there are dependency issues, you can execute `sudo apt -- fix broken install`
 
 ## Install armcnc
 
