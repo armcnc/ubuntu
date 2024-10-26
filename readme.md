@@ -53,3 +53,17 @@ Compile the generated deb file in the higher-level directory and install it dire
 ```shell
 sudo dpkg -i ../linuxcnc*.deb
 ```
+
+## Install armcnc
+
+Follow the instructions of [armcnc](https://github.com/armcnc/armcnc) to complete the subsequent installation operations
+
+## Thank
+
+[D-Robotics](https://github.com/d-robotics)
+
+[Linuxcnc](https://github.com/LinuxCNC/linuxcnc)
+
+[EtherCAT](https://download.opensuse.org/repositories/home:/bone11111:/branches:/science:/EtherLab/Debian_12/arm64/)
+
+[Ubuntu](https://github.com/ubuntu)
