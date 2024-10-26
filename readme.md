@@ -55,7 +55,7 @@ dpkg-buildpackage -b -uc -j8
 Compile the generated deb file in the higher-level directory and install it directly using the following script.
 
 ```shell
-sudo apt install libespeak1  libespeak-ng1 libpcaudio0 libsonic0 python3-pyqt5.sip libqscintilla2-qt5-15 libgtksourceview-3.0-1 gir1.2-gtksource-3.0 mesa-utils-bin
+sudo apt install libespeak1 libespeak-ng1 libpcaudio0 libsonic0 python3-pyqt5.sip libqscintilla2-qt5-15 libgtksourceview-3.0-1 gir1.2-gtksource-3.0 mesa-utils-bin
 ```
 
 ```shell
