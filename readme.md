@@ -35,7 +35,7 @@ sudo apt install -y dpkg-dev build-essential libudev-dev libmodbus-dev libgtk-3-
 3、Download linuxcnc 2.9.3 source code to ubuntu system.
 
 ```shell
-git clone -b v2.9.3 git@github.com:LinuxCNC/linuxcnc.git
+git clone -b v2.9.3 --depth 1 git@github.com:LinuxCNC/linuxcnc.git
 cd linuxcnc
 ```
 
