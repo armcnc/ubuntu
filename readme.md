@@ -55,6 +55,14 @@ dpkg-buildpackage -b -uc -j8
 Compile the generated deb file in the higher-level directory and install it directly using the following script.
 
 ```shell
+sudo apt install libespeak1  libespeak-ng1 libpcaudio0 libsonic0 python3-pyqt5.sip libqscintilla2-qt5-15 libgtksourceview-3.0-1 gir1.2-gtksource-3.0 mesa-utils-bin
+```
+
+```shell
+sudo apt install mesa-utils python3-opengl python3-configobj libgtksourceview-3.0-dev tclreadline python3-pyqt5 python3-pyqt5.qsci python3-pyqt5.qtsvg python3-pyqt5.qtopengl python3-espeak python3-dbus.mainloop.pyqt5 python3-pyqt5.qtwebengine espeak-ng espeak pyqt5-dev-tools gstreamer1.0-tools python3-poppler-qt5
+```
+
+```shell
 sudo dpkg -i ../linuxcnc*.deb
 ```
 
